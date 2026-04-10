@@ -101,7 +101,7 @@ function render(){
 
 function renderHeader(){
   const back=S.screen!=='home'?`<button class="btn btn-ghost btn-sm" onclick="goHome()">← All communities</button>`:'';
-  return`<div class="hdr"><div class="hdr-left"><h1>Tribal Community Check-In</h1><p>Prompt foundry — locally governed editorial systems</p></div><div>${back}</div></div>`;
+  return`<div class="hdr"><div class="hdr-left"><h1>Tribal Community Check-In</h1><p>Build a reusable weekly community update using a clear, trust-preserving format.</p></div><div>${back}</div></div>`;
 }
 
 function renderScreen(){
@@ -128,7 +128,7 @@ function renderHome(){
       <div style="font-size:19px;font-weight:600">Community profiles</div>
       <button class="btn btn-teal btn-sm" onclick="newCommunity()">+ New community</button>
     </div>
-    <p style="font-size:13px;color:#666;margin-bottom:1rem">Each community owns its prompt, source hierarchy, and publication boundaries. Configs are saved across sessions.</p>
+    <p style="font-size:13px;color:#666;margin-bottom:1rem">Use this tool to organize public events, services, deadlines, alerts, and community notices into a clean community check-in.<br>This tool helps you build a reusable prompt and workflow. It does not replace verification. Always confirm details with the original source or organizer before publishing.</p>
     <div class="home-guide">
       <div class="c-card">
         <h3 style="margin-bottom:.65rem">How to use this tool</h3>
