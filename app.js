@@ -129,11 +129,50 @@ function renderHome(){
       <button class="btn btn-teal btn-sm" onclick="newCommunity()">+ New community</button>
     </div>
     <p style="font-size:13px;color:#666;margin-bottom:1rem">Each community owns its prompt, source hierarchy, and publication boundaries. Configs are saved across sessions.</p>
+    <div class="home-guide">
+      <div class="c-card">
+        <h3 style="margin-bottom:.65rem">How to use this tool</h3>
+        <div class="home-copy">
+          <p><strong>1. Gather verified details first.</strong><br>For each item, try to collect: title, exact date, exact time, location, why it matters, source link, and organizer/contact.</p>
+          <p><strong>2. Sort items into sections.</strong><br>Group entries under practical headings like Weather + Travel, Health, Jobs, Markets, Scholarships, or Save-the-dates.</p>
+          <p><strong>3. Keep every item short and useful.</strong><br>Each listing should tell people what it is, when it is, where it is, why it matters, and where to verify it.</p>
+        </div>
+        <div class="section-note" style="margin-top:1rem;margin-bottom:0">
+          <div style="font-weight:600;color:#555;margin-bottom:.45rem">Recommended item format</div>
+          <div class="otext" style="font-size:12px;line-height:1.65;white-space:pre-wrap">• Item name — Date • Time • Location
+One short practical sentence about why this matters.
+Key details: the most useful facts in one line.
+Source: [official/public link]
+Contact/Host: [name — phone, email, or host page]</div>
+        </div>
+        <div class="home-rules">
+          <div style="font-weight:600;color:#555;margin-bottom:.45rem">Posting rules</div>
+          <p>- Use exact dates whenever possible.</p>
+          <p>- Prefer official sources over reposts.</p>
+          <p>- Include a public contact path.</p>
+          <p>- Do not present unverified items as confirmed.</p>
+          <p>- If something is a community share, label it clearly and advise readers to confirm directly.</p>
+        </div>
+      </div>
+      <div class="c-card">
+        <h3 style="margin-bottom:.65rem">Why this gets easier over time</h3>
+        <div class="home-copy">
+          <p>The first build usually takes the most effort because you are creating the structure: sections, source standards, contact patterns, tone, and formatting.</p>
+          <p>Once you have a strong first version, the generated prompt becomes a reusable template. In later weeks, you usually only need to update the dates, swap in new events or notices, remove expired items, and refine details.</p>
+          <p>Build carefully once, then reuse and improve.</p>
+        </div>
+      </div>
+    </div>
     <div class="grid">
       ${cards}
       <div class="new-c" onclick="newCommunity()"><span style="font-size:24px;font-weight:300">+</span><span>New community</span></div>
     </div>
-    ${S.communities.length===0?`<div class="empty"><p>No communities yet. Create your first one above.</p></div>`:''}`;
+    ${S.communities.length===0?`<div class="empty"><p>No communities yet. Create your first one above.</p></div>`:''}
+    <div class="home-footer">
+      <p>This tool is a reusable community prompt builder, not an official notice system.</p>
+      <p>Always verify dates, locations, contacts, and organizer details before posting.</p>
+      <p>Adapt locally. Verify locally. Publish responsibly.</p>
+    </div>`;
 }
 
 function renderBuilder(){
